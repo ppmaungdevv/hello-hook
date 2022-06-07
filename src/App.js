@@ -1,13 +1,15 @@
 import './App.css';
-import HookWithArrayState from './Components/HookWithArrayState';
+import EffectHookCounter from './Components/EffectHookCounter';
+// import HookWithArrayState from './Components/HookWithArrayState';
 // import HookWithObjectState from './Components/HookWithObjectState';
 // import HookCounter from './Components/HookCounter';
 // import HookWithPrevState from './Components/HookWithPrevState';
 
 function App() {
   return (
-    <div className="App">
-      <HookWithArrayState/>
+    <div>
+      <EffectHookCounter/>
+      {/* <HookWithArrayState/> */}
       {/* <HookWithObjectState/> */}
       {/* <HookWithPrevState/> */}
       {/* <HookCounter/> */}
