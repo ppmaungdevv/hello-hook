@@ -1,12 +1,14 @@
 import './App.css';
-import HookWithObjectState from './Components/HookWithObjectState';
+import HookWithArrayState from './Components/HookWithArrayState';
+// import HookWithObjectState from './Components/HookWithObjectState';
 // import HookCounter from './Components/HookCounter';
 // import HookWithPrevState from './Components/HookWithPrevState';
 
 function App() {
   return (
     <div className="App">
-      <HookWithObjectState/>
+      <HookWithArrayState/>
+      {/* <HookWithObjectState/> */}
       {/* <HookWithPrevState/> */}
       {/* <HookCounter/> */}
     </div>
