@@ -25,10 +25,24 @@ function EffectHookCounter() {
       setY(e.clientY)
     }
 
+    // useEffect(() => {
+    //   console.log('effect called')
+    //   window.addEventListener('mousemove', logMousePosition)
+    // }, []) // called effect only once like componentDidMount in class
+
+
+    // ------------- run effect with clean up
     useEffect(() => {
       console.log('effect called')
       window.addEventListener('mousemove', logMousePosition)
-    }, []) // called effect only once like componentDidMount in class
+
+      return () => {
+        console.log('Comp Unmout')
+        window.removeEventListener('mousemove', logMousePosition)
+      }
+      // whatever return as function in useEffect is cleanup function
+      // similar to componentWillUnmount in Class
+    }, []) // withoutcleanup there might be memory leak
 
   return (
     <div>
