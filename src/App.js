@@ -1,6 +1,7 @@
 import './App.css';
+import IntervalHookCounter from './Components/IntervalHookCounter';
 // import EffectHookCounter from './Components/EffectHookCounter';
-import EffectHookCounterContainer from './Components/EffectHookCounterContainer';
+// import EffectHookCounterContainer from './Components/EffectHookCounterContainer';
 // import HookWithArrayState from './Components/HookWithArrayState';
 // import HookWithObjectState from './Components/HookWithObjectState';
 // import HookCounter from './Components/HookCounter';
@@ -9,7 +10,8 @@ import EffectHookCounterContainer from './Components/EffectHookCounterContainer'
 function App() {
   return (
     <div>
-      <EffectHookCounterContainer/>
+      <IntervalHookCounter/>
+      {/* <EffectHookCounterContainer/> */}
       {/* <EffectHookCounter/> */}
       {/* <HookWithArrayState/> */}
       {/* <HookWithObjectState/> */}
